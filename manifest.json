@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "local.workspaces",
+  "name": "Workspaces",
+  "version": "1.0.0",
+  "author": "jasikor",
+  "description": "Ten-slot workspace widget for the Omarchy bar",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Workspaces.qml"
+  },
+  "barWidget": {
+    "displayName": "Workspaces",
+    "description": "Workspace digits 0-9 with circled occupied and focused states",
+    "category": "Compositor",
+    "allowMultiple": false
+  },
+  "omarchy": {
+    "clonedFrom": "omarchy.workspaces"
+  }
+}
