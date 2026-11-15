@@ -3,8 +3,11 @@
 A ten-slot workspace widget for the [Omarchy](https://omarchy.org/) bar.
 
 The bar shows `0 1 2 3 4 5 6 7 8 9` in keyboard order, always in the same
-place: `0` is workspace 10 (what `SUPER + 0` targets), `1`–`9` are workspaces
-1–9. Slots never appear, disappear or shift around.
+place: `0` is the tenth workspace of the bar's own monitor, `1`–`9` the first
+nine. Every monitor owns a block of ten workspaces — 1–10 for the first,
+11–20 for the second, and so on (see Omarchy's per-monitor workspaces) — so
+each screen's bar addresses its own block under the same digits. Slots never
+appear, disappear or shift around.
 
 State is shown with the font's own circled digits instead of drawn shapes:
 
@@ -18,7 +21,9 @@ The digits use the bar's default font (the same size and weight as the clock),
 and are optically centred per glyph via `TextMetrics`, so a slot does not jump
 when it switches between plain, circled and filled forms.
 
-Left click focuses the workspace; hovering shows a `Workspace N` tooltip.
+Left click focuses that workspace on the bar's monitor, bringing it back over if
+it is currently living on another screen; hovering shows a `Workspace N`
+tooltip.
 
 ## Install
 

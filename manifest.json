@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "local.workspaces",
   "name": "Workspaces",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "jasikor",
   "description": "Ten-slot workspace widget for the Omarchy bar",
   "kinds": [
@@ -13,7 +13,7 @@
   },
   "barWidget": {
     "displayName": "Workspaces",
-    "description": "Workspace digits 0-9 with circled occupied and focused states",
+    "description": "Per-monitor workspace digits 0-9 with circled occupied and focused states",
     "category": "Compositor",
     "allowMultiple": false
   },
